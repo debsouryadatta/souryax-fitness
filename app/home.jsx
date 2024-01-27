@@ -30,7 +30,7 @@ export default function Home() {
 
         <View className="flex justify-center items-center space-y-2">
             <Image 
-                source={require('../assets/images/avatar.png')}
+                source={{uri: "https://res.cloudinary.com/diyxwdtjd/image/upload/v1706370170/projects/avatar_nzksdx.png"}}
                 style={{height: hp(6), width: hp(6)}} 
                 className="rounded-full"
             />

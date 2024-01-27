@@ -26,7 +26,7 @@ const ItemCard = ({item, index}, parallaxProps)=> {
   return (
     <View style={{width: wp(100)-70, height: hp(25)}}>
       <ParallaxImage
-        source={item}
+        source={{uri: item}}
         containerStyle={{borderRadius: 30, flex:1}}
         style={{resizeMode: 'contain'}}
         parallaxFactor={1}

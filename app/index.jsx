@@ -1,10 +1,11 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, { FadeIn, FadeInDown } from 'react-native-reanimated';
 import { useRouter } from 'expo-router';
+import { Image } from 'expo-image';
 
 export default function index() {
   const router = useRouter()
@@ -12,7 +13,7 @@ export default function index() {
   return (
     <View className="flex-1 flex justify-center">
       <StatusBar style="light" />
-      <Image className="h-full w-full absolute" source={require('../assets/images/welcome.png')} />
+      <Image className="h-full w-full absolute" source={{uri: "https://res.cloudinary.com/diyxwdtjd/image/upload/v1706368622/projects/welcome_ccepbg.png"}} />
       <LinearGradient
         colors={['transparent', '#18181b']}
         style={{ width: wp(100), height: hp(100) }}
