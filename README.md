@@ -84,3 +84,6 @@ Like `npm start` / `yarn start`, but also attempts to open your app on a connect
 31. Then Deployment -> npm install -g eas-cli, eas build --platform android (having issues in deployment, gradle issues, issue with local images)
 32. Fixed the above issue by pushing the local images to cloudinary and using only the urls
 33. Changing the eas.json according to the expo docs(link - https://docs.expo.dev/build-reference/apk/), then eas build -p android --profile preview to build the apk file
+<!-- eas update -->
+34. After trying so much in Ubuntu, eas update didn't work there, so had to switch to windows, then eas update worked
+35. eas update -> It gives us a link through which we can run our application in the expo app
